@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" >
+    <data>
+        <variable name="vm" type="com.slima.csdashboard.modules.viewmodels.CreditValuesViewModel"/>
+        <import type="android.view.View"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eaeaea">
+
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:indeterminate="true"
+            android:visibility="@{vm.loading ? View.VISIBLE : View.GONE}"
+            android:layout_centerInParent="true"/>
+
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="100"
+            android:progressDrawable="@drawable/progress_custom"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/progressBar"/>
+
+
+        <ProgressBar
+            android:visibility="@{!vm.loading ? View.VISIBLE : View.GONE}"
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="@{vm.percentage, default=67}"
+            android:rotation="-90"
+            android:progressDrawable="@drawable/progress_custom_inner"/>
+
+
+        <TextView
+            android:visibility="@{!vm.loading ? View.VISIBLE : View.INVISIBLE}"
+            android:id="@+id/credit_fragment_percentage_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:textColor="@{vm.textColor}"
+            android:text="@{String.valueOf(vm.creditScore), default=100}"/>
+
+        <TextView
+            android:layout_above="@id/credit_fragment_percentage_value"
+            android:id="@+id/credit_fragment_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/your_score_label"/>
+
+        <TextView
+            android:visibility="@{!vm.loading ? View.VISIBLE : View.INVISIBLE}"
+            android:id="@+id/credit_fragment_min_value"
+            android:layout_below="@id/credit_fragment_percentage_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@{vm.totalScore, default=`Out of XX`}"/>
+
+
+
+    </RelativeLayout>
+</layout>
