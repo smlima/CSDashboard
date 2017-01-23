@@ -5,6 +5,8 @@ import android.content.Context;
 import javax.inject.Inject;
 
 /**
+ * Abstract the Android resources
+ *
  * Created by sergio.lima on 21/01/2017.
  */
 public class ResourcesService {

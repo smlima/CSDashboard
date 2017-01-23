@@ -11,6 +11,8 @@ import java.util.Map;
 import javax.inject.Inject;
 
 /**
+ * Factory to create the views corresnpondent to the correct component
+ *
  * Created by sergio.lima on 21/01/2017.
  */
 public class ViewFactory {

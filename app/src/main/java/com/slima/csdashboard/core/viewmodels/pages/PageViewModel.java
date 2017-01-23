@@ -6,6 +6,9 @@ import com.slima.csdashboard.core.viewmodels.BaseViewModel;
 import javax.inject.Inject;
 
 /**
+ * Page view model
+ * this is simpler because its not required more logic
+ *
  * Created by sergio.lima on 21/01/2017.
  */
 

@@ -4,6 +4,8 @@ import com.slima.csdashboard.core.components.ui.UIBaseComponent;
 import com.slima.csdashboard.core.viewmodels.components.BaseComponentViewModel;
 
 /**
+ * Fragment for a specific ViewModel
+ *
  * Created by sergio.lima on 21/01/2017.
  */
 

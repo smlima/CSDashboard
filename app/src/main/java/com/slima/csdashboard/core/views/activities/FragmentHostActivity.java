@@ -16,6 +16,8 @@ import com.slima.csdashboard.modules.components.ui.CreditComponent;
 import javax.inject.Inject;
 
 /**
+ * Specific to handle one fragment
+ *
  * Created by sergio.lima on 21/01/2017.
  */
 public class FragmentHostActivity extends BaseActivity {

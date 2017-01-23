@@ -16,6 +16,9 @@ import javax.inject.Inject;
 import javax.inject.Singleton;
 
 /**
+ * Factory pattern
+ * create a VM for the specified component
+ *
  * Created by sergio.lima on 21/01/2017.
  */
 @Singleton

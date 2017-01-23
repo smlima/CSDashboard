@@ -15,6 +15,12 @@ import com.slima.csdashboard.modules.components.ui.CreditComponent;
 import javax.inject.Inject;
 
 /**
+ * ViewModel of the CreditValues
+ *
+ * will interact with the View and the Model. contain all the bindables
+ * required to interface with the View (fragment in this case) and contains
+ * a reference to the CreditValues retrieved by a call to the network repository
+ *
  * Created by sergio.lima on 21/01/2017.
  */
 

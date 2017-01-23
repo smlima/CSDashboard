@@ -13,6 +13,9 @@ import com.slima.csdashboard.core.viewmodels.pages.PageViewModel;
 import javax.inject.Inject;
 
 /**
+ * Base activity logic
+ * setup the views common independent to the type of activity
+ *
  * Created by sergio.lima on 21/01/2017.
  */
 

@@ -6,6 +6,8 @@ import android.util.Log;
 import java.util.concurrent.Executors;
 
 /**
+ * abstraction of the AsyncTask to simplify the Async calls
+ *
  * Created by sergio.lima on 21/01/2017.
  */
 

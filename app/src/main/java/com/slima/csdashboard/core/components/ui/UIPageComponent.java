@@ -3,6 +3,8 @@ package com.slima.csdashboard.core.components.ui;
 import com.slima.csdashboard.core.components.BaseComponent;
 
 /**
+ * Component to create a Page, associated with a Screen / Activity
+ *
  * Created by sergio.lima on 21/01/2017.
  */
 

@@ -8,6 +8,10 @@ import com.slima.csdashboard.core.ioc.IoC;
 import dagger.ObjectGraph;
 
 /**
+ * Simple Application
+ * will initialize the Inversion of Control object to allow access of the
+ * modules anywhere throughout the app, and allow for injection
+ *
  * Created by sergio.lima on 21/01/2017.
  */
 

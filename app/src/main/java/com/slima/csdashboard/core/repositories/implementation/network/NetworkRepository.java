@@ -6,12 +6,16 @@ import com.slima.csdashboard.core.repositories.CallbackAsyncTask;
 import com.slima.csdashboard.core.repositories.INetworkRepository;
 
 /**
+ * implementation of the networkRepository interface
+ *
  * Created by sergio.lima on 21/01/2017.
  */
 
 public class NetworkRepository implements INetworkRepository {
 
-
+    /**
+     * netowrk service object
+     */
     private final NetworkService mNetworkService;
 
     public NetworkRepository(NetworkService networkService) {
@@ -27,7 +31,7 @@ public class NetworkRepository implements INetworkRepository {
             protected CreditValues doStuff(Object... params) throws Exception{
 
                 // sync method
-                CreditValues creditCheck = mNetworkService.getCreditChecks().getCreditCheck();
+                CreditValues creditCheck = mNetworkService.getCreditChecksService().getCreditCheck();
 
                 return creditCheck;
             }

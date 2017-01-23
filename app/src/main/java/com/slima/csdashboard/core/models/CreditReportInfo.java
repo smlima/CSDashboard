@@ -5,6 +5,7 @@ import com.google.gson.annotations.SerializedName;
 import com.slima.csdashboard.core.models.base.BaseModel;
 
 /**
+ * CreditReportInfo datamodel
  * Created by sergio.lima on 21/01/2017.
  */
 public class CreditReportInfo  extends BaseModel {

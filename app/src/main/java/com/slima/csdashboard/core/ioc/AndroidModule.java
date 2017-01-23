@@ -1,6 +1,9 @@
 package com.slima.csdashboard.core.ioc;
 
 /**
+ * Inversion of Controll patern
+ * provide all the modules required.
+ *
  * Created by sergio.lima on 21/01/2017.
  */
 

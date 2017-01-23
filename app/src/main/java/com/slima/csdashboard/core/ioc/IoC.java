@@ -3,6 +3,9 @@ package com.slima.csdashboard.core.ioc;
 import dagger.ObjectGraph;
 
 /**
+ * Inversion of Control object for dagger
+ * inject the modules and allow getter the modules required
+ *
  * Created by sergio.lima on 21/01/2017.
  */
 

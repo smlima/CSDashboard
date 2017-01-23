@@ -4,6 +4,8 @@ import com.slima.csdashboard.core.components.ComponentTypes;
 import com.slima.csdashboard.core.components.ui.UIBaseComponent;
 
 /**
+ * Component for getting the Credit Component
+ *
  * Created by sergio.lima on 21/01/2017.
  */
 

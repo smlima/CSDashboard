@@ -11,6 +11,9 @@ import com.slima.csdashboard.core.viewmodels.components.BaseComponentViewModel;
 import javax.inject.Inject;
 
 /**
+ * Base Fragment logic
+ * ie get the componenent VM from the respective component
+ *
  * Created by sergio.lima on 21/01/2017.
  */
 

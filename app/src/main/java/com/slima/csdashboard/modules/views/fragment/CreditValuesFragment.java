@@ -13,6 +13,8 @@ import com.slima.csdashboard.databinding.CreditFragmentBinding;
 import com.slima.csdashboard.modules.viewmodels.CreditValuesViewModel;
 
 /**
+ * Fragment to display the CreditValues view model
+ *
  * Created by sergio.lima on 21/01/2017.
  */
 

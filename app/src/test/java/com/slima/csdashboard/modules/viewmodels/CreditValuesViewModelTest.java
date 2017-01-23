@@ -5,7 +5,7 @@ import com.slima.csdashboard.core.models.CreditValues;
 import com.slima.csdashboard.core.repositories.Callback;
 import com.slima.csdashboard.core.repositories.INetworkRepository;
 import com.slima.csdashboard.core.repositories.implementation.network.NetworkService;
-import com.slima.csdashboard.core.repositories.implementation.network.methodservices.CreditChecks;
+import com.slima.csdashboard.core.repositories.implementation.network.methodservices.CreditChecksService;
 import com.slima.csdashboard.core.services.ResourcesService;
 import com.slima.csdashboard.modules.components.ui.CreditComponent;
 
@@ -21,6 +21,8 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 /**
+ * simple test to test the CreditValuesViewModel
+ *
  * Created by sergio.lima on 23/01/2017.
  */
 public class CreditValuesViewModelTest {
@@ -33,13 +35,13 @@ public class CreditValuesViewModelTest {
     public void setUp() throws Exception {
         NetworkService networkService = mock(NetworkService.class);
 
-        CreditChecks creditChecks = mock(CreditChecks.class);
+        CreditChecksService creditChecksService = mock(CreditChecksService.class);
         CreditValues value = mock(CreditValues.class);
 
         CreditReportInfo creditReportInfo = mock(CreditReportInfo.class);
 
-        when(networkService.getCreditChecks()).thenReturn(creditChecks);
-        when(creditChecks.getCreditCheck()).thenReturn(value);
+        when(networkService.getCreditChecksService()).thenReturn(creditChecksService);
+        when(creditChecksService.getCreditCheck()).thenReturn(value);
 
         when(value.getCreditReportInfo()).thenReturn(creditReportInfo);
 

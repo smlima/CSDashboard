@@ -5,6 +5,8 @@ import com.google.gson.annotations.SerializedName;
 import com.slima.csdashboard.core.models.base.BaseModel;
 
 /**
+ * CreditValues data model
+ *
  * Created by sergio.lima on 21/01/2017.
  */
 

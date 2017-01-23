@@ -5,6 +5,8 @@ import com.slima.csdashboard.core.ioc.IoC;
 import com.slima.csdashboard.core.viewmodels.BaseViewModel;
 
 /**
+ * Base viewmodel for a specific component
+ *
  * Created by sergio.lima on 21/01/2017.
  */
 
